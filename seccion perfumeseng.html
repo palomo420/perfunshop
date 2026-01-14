@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumería - Catálogo por Categorías</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets\style\seccion perfumeseng.css">
+</head>
+<body>
+    <!-- Buscador principal -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Buscar perfumes por nombre, marca o descripción...">
+                    <button class="clear-search" id="clear-search" title="Limpiar búsqueda">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="search-info" id="search-info">
+                    <span id="search-results-count">0</span> resultados encontrados para "<span id="search-term" class="highlight"></span>"
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Navegación entre categorías -->
+    <nav class="category-nav">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#hombres" class="nav-link active">
+                    <i class="fas fa-mars"></i> Perfumes para Hombres
+                </a>
+                <a href="#mujeres" class="nav-link">
+                    <i class="fas fa-venus"></i> Perfumes para Mujeres
+                </a>
+                <a href="#ninos" class="nav-link">
+                    <i class="fas fa-child"></i> Perfumes para Niños & Niñas
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- SECCIÓN HOMBRES -->
+    <section id="hombres" class="category-section hombres-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PERFUMES PARA HOMBRES</h2>
+                <p class="section-subtitle">Descubre nuestra exclusiva colección de fragancias masculinas, diseñadas para hombres modernos que buscan elegancia, carácter y distinción.</p>
+            </div>
+            
+            <div class="perfumes-grid" id="hombres-grid">
+                <!-- Perfume 1 Hombres -->
+                <div class="perfume-card" data-search="noir élégant luxury scents fragancia audaz sofisticada madera sándalo pimienta negra ámbar">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Noir Élégant">
+                        <span class="perfume-category category-hombre">Hombre</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Noir Élégant</h3>
+                        <p class="perfume-brand">Luxury Scents</p>
+                        <p class="perfume-description">Una fragancia audaz y sofisticada con notas de madera de sándalo, pimienta negra y ámbar. Ideal para ocasiones especiales y noches elegantes.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$89<span>.99</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 2 Hombres -->
+                <div class="perfume-card" data-search="ocean breeze aqua marine fragancia fresca revitalizante notas cítricas algas marinas musgo">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-0126f7e1e88d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Ocean Breeze">
+                        <span class="perfume-category category-hombre">Hombre</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Ocean Breeze</h3>
+                        <p class="perfume-brand">Aqua Marine</p>
+                        <p class="perfume-description">Fragancia fresca y revitalizante con notas cítricas, algas marinas y musgo. Perfecta para el uso diario y deportivo.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$75<span>.50</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 3 Hombres -->
+                <div class="perfume-card" data-search="wood mystique timber co esencia masculina intensa notas cedro vetiver cuero">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wood Mystique">
+                        <span class="perfume-category category-hombre">Hombre</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Wood Mystique</h3>
+                        <p class="perfume-brand">Timber & Co</p>
+                        <p class="perfume-description">Esencia masculina intensa con notas de cedro, vetiver y cuero. Para el hombre seguro de sí mismo que aprecia lo clásico.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$102<span>.00</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 4 Hombres -->
+                <div class="perfume-card" data-search="urban spice metropolitan scents combinación moderna especias exóticas bergamota musk">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-0126f7e1e88d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Urban Spice">
+                        <span class="perfume-category category-hombre">Hombre</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Urban Spice</h3>
+                        <p class="perfume-brand">Metropolitan Scents</p>
+                        <p class="perfume-description">Combinación moderna de especias exóticas, bergamota y musk. Representa al hombre urbano, dinámico y contemporáneo.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$88<span>.75</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN MUJERES -->
+    <section id="mujeres" class="category-section mujeres-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PERFUMES PARA MUJERES</h2>
+                <p class="section-subtitle">Explora nuestra colección de fragancias femeninas, creadas para realzar la feminidad, elegancia y personalidad única de cada mujer.</p>
+            </div>
+            
+            <div class="perfumes-grid" id="mujeres-grid">
+                <!-- Perfume 1 Mujeres -->
+                <div class="perfume-card" data-search="rose velvet fleur de paris esencia floral romántica notas rosa búlgara jazmín vainilla">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-0126f7e1e88d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Rose Velvet">
+                        <span class="perfume-category category-mujer">Mujer</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Rose Velvet</h3>
+                        <p class="perfume-brand">Fleur de Paris</p>
+                        <p class="perfume-description">Una esencia floral romántica con notas de rosa búlgara, jazmín y vainilla. Elegancia y feminidad en cada gota.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$95<span>.00</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 2 Mujeres -->
+                <div class="perfume-card" data-search="golden amber oriental secrets fragancia cálida seductora notas ámbar sándalo vainilla">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Golden Amber">
+                        <span class="perfume-category category-mujer">Mujer</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Golden Amber</h3>
+                        <p class="perfume-brand">Oriental Secrets</p>
+                        <p class="perfume-description">Fragancia cálida y seductora con notas de ámbar, sándalo y un toque de vainilla. Misterio y sofisticación.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$110<span>.50</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 3 Mujeres -->
+                <div class="perfume-card" data-search="citrus bloom sunshine scents explosión frescura notas bergamota naranja sanguina flor azahar">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1593990965213-7c8c536fe78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Citrus Bloom">
+                        <span class="perfume-category category-mujer">Mujer</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Citrus Bloom</h3>
+                        <p class="perfume-brand">Sunshine Scents</p>
+                        <p class="perfume-description">Una explosión de frescura con notas de bergamota, naranja sanguina y flor de azahar. Energía y vitalidad.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$68<span>.75</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 4 Mujeres -->
+                <div class="perfume-card" data-search="midnight orchid nocturnal blooms fragancia misteriosa sensual notas orquídea negra pachulí ámbar gris">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Midnight Orchid">
+                        <span class="perfume-category category-mujer">Mujer</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Midnight Orchid</h3>
+                        <p class="perfume-brand">Nocturnal Blooms</p>
+                        <p class="perfume-description">Fragancia misteriosa y sensual con notas de orquídea negra, pachulí y ámbar gris. Para noches inolvidables.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$125<span>.00</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN NIÑOS Y NIÑAS -->
+    <section id="ninos" class="category-section ninos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PERFUMES PARA NIÑOS & NIÑAS</h2>
+                <p class="section-subtitle">Fragancias suaves y delicadas especialmente formuladas para la piel sensible de los más pequeños. Diversión y frescura en cada spray.</p>
+            </div>
+            
+            <div class="perfumes-grid" id="ninos-grid">
+                <!-- Perfume 1 Niños -->
+                <div class="perfume-card" data-search="magic forest little angels fragancia suave divertida notas manzana verde vainilla algodón azúcar">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-0126f7e1e88d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Magic Forest">
+                        <span class="perfume-category category-ninos">Niños</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Magic Forest</h3>
+                        <p class="perfume-brand">Little Angels</p>
+                        <p class="perfume-description">Fragancia suave y divertida con notas de manzana verde, vainilla y algodón de azúcar. Perfecta para los más pequeños.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$45<span>.99</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 2 Niñas -->
+                <div class="perfume-card" data-search="fairy garden princess collection delicada fragancia floral notas lavanda vainilla miel">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fairy Garden">
+                        <span class="perfume-category category-ninos">Niñas</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Fairy Garden</h3>
+                        <p class="perfume-brand">Princess Collection</p>
+                        <p class="perfume-description">Delicada fragancia floral con notas de lavanda, vainilla y un toque de miel. Suave y apropiada para niñas.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$49<span>.50</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 3 Niños -->
+                <div class="perfume-card" data-search="super hero adventure kids fragancia fresca energética notas cítricas menta">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-0126f7e1e88d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Super Hero">
+                        <span class="perfume-category category-ninos">Niños</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Super Hero</h3>
+                        <p class="perfume-brand">Adventure Kids</p>
+                        <p class="perfume-description">Fragancia fresca y energética con notas cítricas y un toque de menta. Para pequeños aventureros.</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$42<span>.75</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Perfume 4 Niñas -->
+                <div class="perfume-card" data-search="unicorn dreams fantasy world fragancia mágica notas frutos bosque algodón azúcar brillo">
+                    <div class="perfume-image">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Unicorn Dreams">
+                        <span class="perfume-category category-ninos">Niñas</span>
+                    </div>
+                    <div class="perfume-info">
+                        <h3 class="perfume-name">Unicorn Dreams</h3>
+                        <p class="perfume-brand">Fantasy World</p>
+                        <p class="perfume-description">Fragancia mágica con notas de frutos del bosque, algodón de azúcar y un toque de brillo. ¡Pura magia!</p>
+                        <div class="perfume-footer">
+                            <div class="perfume-price">$52<span>.25</span></div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección 1: Logo y descripción -->
+            <div class="footer-section">
+                <h3 class="footer-title">ESSENCIA</h3>
+                <p class="footer-description">Perfumería de lujo con las fragancias más exclusivas del mundo. Descubre nuestra colección de perfumes artesanales creados con los mejores ingredientes naturales.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/cristiandavid.palominobarraza" class="social-link" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/freefirelatam/" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sección 2: Menú -->
+            <div class="footer-section">
+                <h4 class="footer-subtitle menu">Menú</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#perfumes">Perfumes</a></li>
+                    <li><a href="#brands">Marcas</a></li>
+                    <li><a href="#about">Nosotros</a></li>  
+            </div>
+            
+            <!-- Sección 3: Tienda -->
+            <div class="footer-section">
+                <h4 class="footer-subtitle store">Tienda</h4>
+                <ul class="footer-links">
+                    <li><a href="#hombres">Hombre</a></li>
+                    <li><a href="#mujeres">Mujer</a></li>
+                    <li><a href="#niños y niñas">niños y niñas</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sección 4: Contacto -->
+            <div class="footer-section">
+                <h4 class="footer-subtitle contact">Contacto</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div class="contact-text">
+                            Calle Perfume, 123<br>
+                            28001 Madrid, España
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div class="contact-text">
+                            +34 910 123 456
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-text">
+                            info@essencia.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 ESSENCIA Perfumería. Todos los derechos reservados. | 
+               <a href="#">Política de privacidad</a> | 
+               <a href="#">Términos y condiciones</a> | 
+               <a href="#">Política de cookies</a>
+            </p>
+        </div>
+    </footer>
+    
+ <script src="assets\js\seccion perfumeseng.js"></script>
+</body>
+</html>

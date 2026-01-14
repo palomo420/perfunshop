@@ -1,0 +1,322 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            min-height: 100vh;
+            background: linear-gradient(rgba(5, 5, 15, 0.85), rgba(5, 5, 15, 0.9)), 
+                        url('https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1940&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo-container {
+            margin-bottom: 2.5rem;
+            animation: fadeInDown 1.2s ease-out;
+        }
+        
+        .logo-main {
+            font-size: 4.5rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: #ffffff;
+            text-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 0.5rem;
+        }
+        
+        .logo-subtitle {
+            font-size: 1.8rem;
+            letter-spacing: 8px;
+            color: #e6e6e6;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .logo-subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ffffff, transparent);
+        }
+        
+        .inspiration-text {
+            font-size: 2.2rem;
+            font-weight: 300;
+            font-style: italic;
+            margin: 3rem 0;
+            color: #f8f8f8;
+            max-width: 800px;
+            line-height: 1.4;
+            animation: fadeInUp 1.5s ease-out 0.3s both;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 1.2rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            animation: fadeIn 2s ease-out 0.6s both;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.5s ease;
+            z-index: -1;
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            letter-spacing: 3px;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-button:hover::before {
+            left: 0;
+        }
+        
+        .perfume-bottle {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 350px;
+            background: linear-gradient(to top, rgba(10, 10, 20, 0.8), transparent);
+            border-radius: 40px 40px 0 0;
+            overflow: hidden;
+            opacity: 0.7;
+        }
+        
+        .bottle-left {
+            left: 10%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .bottle-right {
+            right: 10%;
+            animation: float 6s ease-in-out infinite 0.5s;
+        }
+        
+        .bottle-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(200, 160, 255, 0.3), rgba(120, 80, 200, 0.1));
+            border-radius: 40px 40px 0 0;
+        }
+        
+        .perfume-note {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            animation: floatUp 8s linear infinite;
+        }
+        
+        .note-1 {
+            top: 50%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+        
+        .note-2 {
+            top: 60%;
+            left: 50%;
+            animation-delay: 1s;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .note-3 {
+            top: 40%;
+            left: 70%;
+            animation-delay: 2s;
+            width: 25px;
+            height: 25px;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 4rem;
+            animation: fadeIn 2s ease-out 0.9s both;
+        }
+        
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 200px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #e6e6e6;
+        }
+        
+        .feature-text {
+            font-size: 0.95rem;
+            color: #cccccc;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100vh) scale(0.5);
+                opacity: 0;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .logo-main {
+                font-size: 3.5rem;
+            }
+            
+            .logo-subtitle {
+                font-size: 1.4rem;
+                letter-spacing: 6px;
+            }
+            
+            .inspiration-text {
+                font-size: 1.8rem;
+            }
+            
+            .bottle-left, .bottle-right {
+                width: 150px;
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo-main {
+                font-size: 2.8rem;
+                letter-spacing: 3px;
+            }
+            
+            .logo-subtitle {
+                font-size: 1.2rem;
+                letter-spacing: 4px;
+            }
+            
+            .inspiration-text {
+                font-size: 1.5rem;
+                margin: 2rem 0;
+            }
+            
+            .bottle-left, .bottle-right {
+                display: none;
+            }
+            
+            .features {
+                gap: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 1.5rem;
+            }
+            
+            .logo-main {
+                font-size: 2.2rem;
+            }
+            
+            .logo-subtitle {
+                font-size: 1rem;
+                letter-spacing: 3px;
+            }
+            
+            .inspiration-text {
+                font-size: 1.3rem;
+            }
+            
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
