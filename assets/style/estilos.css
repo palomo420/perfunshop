@@ -14,7 +14,7 @@
         .hero-section {
             min-height: 100vh;
             background: linear-gradient(rgba(5, 5, 15, 0.85), rgba(5, 5, 15, 0.9)), 
-                        url('https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1940&q=80');
+                        url('../../img/logo_perfumeria.png');
             background-size: cover;
             background-position: center;
             display: flex;
